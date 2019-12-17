@@ -1,0 +1,47 @@
+
+.about {
+    background-color: #fff;
+
+    &__wrap {
+        padding: 113px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 50%;       
+        position: relative;
+
+        img {
+            max-width: 300px;           
+            position: absolute;           
+            right: 117px;
+        }
+    }    
+
+    &__descr {
+        width: 50%;
+    }
+
+    &__caption {
+        display: block;
+        max-width: 315px;
+        font-size: 35px;
+        color: #545454;
+        line-height: 1.28;
+        padding: 24px 0 30px;
+        letter-spacing: 2px;
+    }
+
+    &__text {
+       font-family: $arial;
+       display: block;
+       max-width: 437px; 
+       font-size: 15px;
+       color: #4c4c4c;
+       line-height: 1.6;
+       letter-spacing: -0.15px;
+    }
+
+}
+
