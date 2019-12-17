@@ -26,9 +26,10 @@ ul, ol {
 a {
     text-decoration: none;
     color: $main-color;
+    @include trs;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     margin: 0;
 }
 

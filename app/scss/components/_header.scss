@@ -1,14 +1,14 @@
 @import "../variables";
 @import "../mixins";
 
-.header {
+.header { 
+
     &__wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 170px;
     }
-
     &__logo {
 
         &-link {
@@ -20,12 +20,14 @@
                     &-caption {
                         color: $white;
                     }
+
                     &-text {
                         color: $beige;
                     }
                 }
             }
         }
+
         &-caption {
             font-size: 32px;
             display: block;
@@ -46,62 +48,66 @@
 
     &__nav {
     
-    &-list {
-        display: flex;
-        align-items: center;
-        margin: 0 -17px;
-    }
+        &-list {
+            display: flex;
+            align-items: center;
+            margin: 0 -17px;
+        }
 
-    &-item {
-        padding: 0 17px;
+        &-item {
+            padding: 0 17px;
 
-        a {
-            font-family: $arial;
-            position: relative;
+            a {
+                font-family: $arial;
+                position: relative;
 
-            &:before {
-                position: absolute;
-                content: '';
-                height: 3px;
-                background-color: $beige;
-                bottom: 5px;
-                left: 0;
-                width: 0;
-                @include trs;
-            }
-            
-            &:hover {
                 &:before {
-                    width: 100%;
+                    position: absolute;
+                    content: '';
+                    height: 3px;
+                    background-color: $beige;
+                    bottom: 5px;
+                    left: 0;
+                    width: 0;
+                    @include trs;
                 }
-            }
-         }
-     }
-}
-&__btn-menu {
-    display: none;
-    @include: b(768) {
-        display: block;
-        position: relative;
-        width: 25px;
-        height: 25px;
-        background-color: red;
-
-        span {
-            position: absolute;
-            display: block;
-            width: 25px;
-            height: 3px;
-            border-radius: 3px;
-            background-color: $white;
-
-            &:ntn-childe(1) {
-                top: 0;
+                
+                &:hover {
+                    &:before {
+                        width: 100%;
+                    }
+                }
             }
         }
 
+                    
+            
     }
-}
+    &__btn-menu {
+        display: none;
+        @include b(768) {
+            display: block;
+            position: relative;
+            width: 25px;
+            height: 25px;
+            background-color: red;
 
+            span {
+                position: absolute;
+                display: block;
+                width: 25px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: $white;
+
+                &:ntn-childe(1) {
+                    top: 0;
+                }
+            }
+
+        }
+    }
+
+    
 }
 
