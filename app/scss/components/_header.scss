@@ -8,7 +8,11 @@
         justify-content: space-between;
         align-items: center;
         height: 170px;
+        @include b(768) {
+            height: 100px;
+        }
     }
+    
     &__logo {
 
         &-link {
@@ -32,7 +36,8 @@
             font-size: 32px;
             display: block;
             color: $beige;
-            line-height: 1;
+            line-height: 1.2;
+            letter-spacing: 1.6px;
             @include trs;
         }
 
@@ -47,18 +52,22 @@
     }
 
     &__nav {
+        @include b(768) {
+            display: none;
+        }
     
         &-list {
             display: flex;
             align-items: center;
-            margin: 0 -17px;
+            margin: 0 -18px;
         }
 
         &-item {
-            padding: 0 17px;
+            padding: 0 18px;
 
             a {
                 font-family: $arial;
+                color: white;
                 position: relative;
 
                 &:before {
@@ -66,42 +75,72 @@
                     content: '';
                     height: 3px;
                     background-color: $beige;
-                    bottom: 5px;
+                    bottom: -8px;
                     left: 0;
                     width: 0;
                     @include trs;
                 }
                 
                 &:hover {
+
                     &:before {
                         width: 100%;
                     }
                 }
             }
         }
-
-                    
             
     }
+
     &__btn-menu {
         display: none;
         @include b(768) {
             display: block;
             position: relative;
             width: 25px;
-            height: 25px;
-            background-color: red;
+            height: 20px;
+            // background-color: red;
+
+            &.active {
+
+                span {
+
+                    &:ntn-child(1) {                        
+                        transform: rotate(-45deg);
+                        top: 9px;
+                    }
+
+                    &:ntn-child(3) {                        
+                         opacity: 0;
+                    }
+
+                    &:ntn-child(3) {                        
+                        transform: rotate(45deg);
+                        top: 9px;
+                    }
+                }
+            }
 
             span {
                 position: absolute;
+                left: 0;
                 display: block;
                 width: 25px;
                 height: 3px;
                 border-radius: 3px;
                 background-color: $white;
+                @include trs;
 
-                &:ntn-childe(1) {
+                &:ntn-child(1) {
                     top: 0;
+                }
+
+                &:ntn-child(2) {
+                    top: 9;
+                }
+
+                &:ntn-child(31) {
+                    top: 18;
                 }
             }
 
