@@ -10,12 +10,11 @@
 
     &__img {
         width: 50%;       
-        position: relative;
+        display: flex;
+        justify-content: center;        
 
         img {
-            max-width: 300px;           
-            position: absolute;           
-            right: 117px;
+            max-width: 300px;          
         }
     }    
 
