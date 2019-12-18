@@ -6,20 +6,36 @@
         padding: 113px 0;
         display: flex;
         justify-content: center;
+
+        @include b(768) {
+            flex-direction: column;
+        }
     }
 
     &__img {
         width: 50%;       
         display: flex;
-        justify-content: center;        
+        justify-content: center;    
+        
+        @include b(768) {
+            width: 100%;  
+            margin-bottom: 50px;
+        }
 
         img {
             max-width: 300px; 
         }
     }    
 
-    &__descr {
+    &__descr__wrap {
         width: 50%;
+        display: flex;
+        align-items: center;    
+        
+        @include b(768) {
+            width: 100%;  
+            justify-content: center;
+        }
     }
 
     &__caption {
@@ -28,7 +44,7 @@
         font-size: 35px;
         color: #545454;
         line-height: 1.28;
-        padding: 24px 0 30px;
+        padding: 0 0 30px;
         letter-spacing: 2px;
     }
 
