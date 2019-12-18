@@ -30,14 +30,15 @@
         }
     }    
 
-    &__descr__wrap {
+    &__descr {
         width: 50%;
         display: flex;
-        align-items: center;    
+        flex-direction: column;
+        justify-content: center;
         
         @include b(768) {
             width: 100%;  
-            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -49,6 +50,13 @@
         line-height: 1.28;
         padding: 0 0 30px;
         letter-spacing: 2px;
+    }  
+    
+    &__content p {   
+
+        &:last-child {              
+            padding-top: 28px;            
+         }
     }
 
     &__text {
@@ -60,10 +68,5 @@
        line-height: 1.6;
        letter-spacing: -0.15px;
     }
-
-    &__text--title {
-        padding-bottom: 25px;
-    }
-
 }
 
