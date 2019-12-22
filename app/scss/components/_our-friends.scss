@@ -45,6 +45,10 @@
     &__item {
         width: 33.33%;
         padding: 0 25px;
+
+        @include b(1024) {
+            padding: 0 15px;
+        } 
     }
 
     &__box {
