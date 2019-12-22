@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
 .our-friends {
     padding: 70px 0;
     background-color: #f6f6f6;
@@ -8,20 +11,44 @@
         text-align: center;
     }
 
+    &__outer {
+        position: relative;
+        margin-bottom: 65px;
+
+        .button-next {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .button-prev {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
     &__wrap {
-        max-width: 910px;
-        margin: 0 auto;
+        max-width: 960px;
+        margin: 0 auto; 
     }
 
     &__inner {
         display: flex;
-        margin: 0 -25px;
-        margin-bottom: 20px;        
+        margin-bottom: 20px;       
     }
 
     &__item {
         width: 33.33%;
         padding: 0 25px;
+
+        @include b(1024) {
+            padding: 0 15px;
+        } 
     }
 
     &__box {
@@ -31,12 +58,19 @@
     }
 
     &__img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
+        height: 270px;
+ 
+        display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
     }
 
     &__name {
@@ -59,12 +93,6 @@
         margin: 0 auto;
     }
 
-   &__outer {
-       position: relative;
-       margin-bottom: 65px;
-
-       
-   }
 }
 
 

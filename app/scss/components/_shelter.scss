@@ -1,29 +1,31 @@
+@import "../variables";
+@import "../mixins";
+
 .shelter {
-    padding: 50px;
+    padding-top: 65px;
+    background-color: #fafafa;
 
-    &__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    .caption {
+        display: block;
+        width: 345px;
+        margin: 0 auto 75px;
+        text-align: center;
+        font-size: 35px;
+        color: #545454;
+        line-height: 1.28;
+        letter-spacing: 2px;
 
-    &__cap {
-        margin-bottom: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        span {
-            display: block;
+        @include b(479) {
+            font-size: 30px;
+            width: 320px;
         }
-
     }
 
     &-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        
+        justify-content: center;  
+        margin: 0 auto;      
     }
 
     &-item {
@@ -34,14 +36,43 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 66px;
 
-        img {
-            max-width: 60px;
-            max-height: 80px;
+        @include b(768) {
+            width: 30%;
         }
+
+        @include b(479) {
+            width: 50%;
+        }
+
+
 
         span {
+            font-size: 20px;
+            color: #545454;
+            line-height: 2.25;
+            letter-spacing: 1.3px;
+            text-align: center;
             display: block;
         }
+
     }
+
+    &__img {      
+        width: 65px;
+        height: 58px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }        
+    }   
+
 }
