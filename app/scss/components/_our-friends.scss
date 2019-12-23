@@ -21,6 +21,32 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
+            border: 2px solid $beige;   
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+
+            span {
+                position: absolute;
+                display: block;
+                width: 15px;
+                height: 2px;
+                background-color: #000;
+                top: 22px;
+                left: 15px;
+            }
+        }
+
+        .button-next:after {
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-right: 1px solid #000;
+            border-top: 1px solid #000;         
+            transform: rotate(45deg);
+            top: 20px;
+            right: 15px;
         }
 
         .button-prev {
@@ -29,6 +55,29 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+            border: 2px solid $beige;            
+
+            span {
+                position: absolute;
+                display: block;
+                width: 15px;
+                height: 2px;
+                background-color: #000;
+                top: 22px;
+                left: 15px;
+            }
+        }
+
+        .button-prev:before {
+            content: '';
+            position: absolute;           
+            width: 7px;
+            height: 7px;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;         
+            transform: rotate(45deg);
+            top: 20px;
+            left: 15px;
         }
     }
 
@@ -45,6 +94,10 @@
     &__item {
         width: 33.33%;
         padding: 0 25px;
+
+        :hover {
+            box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+        }
 
         @include b(1024) {
             padding: 0 15px;
@@ -92,6 +145,8 @@
         width: 265px;
         margin: 0 auto;
     }
+
+
 
 }
 
