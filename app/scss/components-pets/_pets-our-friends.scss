@@ -86,16 +86,11 @@
         margin: 0 auto; 
     }
 
-    &__inner {
+    &__inner-pets {
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 20px;       
     }
-
-    // &__inner-pets {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     margin-bottom: 20px;       
-    // }
 
     &__item {
         width: 33.33%;
