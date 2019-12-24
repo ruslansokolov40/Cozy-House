@@ -91,11 +91,9 @@
         margin-bottom: 20px;       
     }
 
-    // &__inner-pets {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     margin-bottom: 20px;       
-    // }
+    &__inner--pets {
+        flex-wrap: wrap;
+    }
 
     &__item {
         width: 33.33%;
@@ -108,6 +106,10 @@
         @include b(1024) {
             padding: 0 15px;
         } 
+    }
+
+    &__item--pets {
+        width: 25%;
     }
 
     &__box {

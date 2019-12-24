@@ -17,4 +17,28 @@ var swiper = new Swiper('.js-our-friends', {
     }
 });
 
+function toggleMobileMenu() {
+ var btn = document.querySelector('.js-btn-menu');
+ var nav = document.querySelector('.js-btn-nav');
+ var body = document.querySelector('body');
+ console.log(btn);
+
+ btn.onclick = function() {
+  nav.classList.toggle('active');
+  btn.classList.toggle('active');
+  body.classList.toggle('overflow');
+ };
+};
+
+toggleMobileMenu();
+
+function togglePetInfo() {
+  var btnPets = document.querySelectorAll('.js-btn-pets')
+
+  btnPets.forEach(el => {
+    el.onclick = function() {
+      this.datasetid      
+    }
+  })
+};
 
