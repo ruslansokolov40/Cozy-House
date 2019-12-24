@@ -14,13 +14,32 @@
         max-width: 897px;
         width: 100%;
         margin: 0 -70px;
+
+        @include b(1024) {
+            margin: 0 -30px;
+        }
+
+        @include b(768) {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+        }
     }
 
     &__column {
         width: 50%;
         padding: 0 70px;
 
-        
+        @include b(1024) {
+            padding: 0 30px;
+        }
+
+        @include b(768) {
+            width: 100%;
+            padding: 0;
+        }        
     }
 
     .caption {
@@ -33,17 +52,25 @@
         align-items: center;
         padding-bottom: 20px;
 
+        @include b(768) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         img {
             width: 37px;
             height: 42px;
         }
 
         span {
+            font-family: 'Times New Roman';
             font-size: 20px;
             color: $beige;
             line-height: 1.25;
-            letter-spacing: 0.7px;
+            letter-spacing: 1.4px;
             padding-left: 21px;
+            display: block;
 
         }
         

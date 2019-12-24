@@ -31,16 +31,18 @@
         }
 
         @include b(768) {
-            width: 100%;
+            width: 50%;
             padding-bottom: 50px;
+            margin: 0 auto;
         }
 
         img {
             max-width: 100%;
             max-width: 100%;
             width: auto;
-            height: auto;
-        }
+            height: auto;        }
+
+
     }
 
     &__descr {
@@ -137,6 +139,10 @@
         color: #b2b2b2;
         line-height: 1.6;
         display: block;
+
+        @include b(1024) {
+            width: 80%;
+        }
     }
 }
 
