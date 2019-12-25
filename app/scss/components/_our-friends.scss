@@ -13,7 +13,7 @@
 
     &__outer {
         position: relative;
-        margin-bottom: 51px;
+        margin-bottom: 66px;
 
         .button-next {
             position: absolute;
@@ -88,7 +88,6 @@
 
     &__inner {
         display: flex;
-        margin-bottom: 20px;       
     }
 
     &__inner--pets {
@@ -124,7 +123,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 34px;
+        margin-bottom: 22px;
 
         img {
             max-width: 100%;
