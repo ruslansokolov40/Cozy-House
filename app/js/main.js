@@ -1,7 +1,7 @@
-var swiper = new Swiper('.js-our-friends', {
+new Swiper('.js-our-friends', {
     slidesPerView: 1,
     slidesPerGroup: 1,
-    loop: true,   
+    loop: false,   
     navigation: {
       nextEl: '.js-our-friend-next',
       prevEl: '.js-our-friend-prev',
@@ -19,9 +19,8 @@ var swiper = new Swiper('.js-our-friends', {
 
 function toggleMobileMenu() {
  var btn = document.querySelector('.js-btn-menu');
- var nav = document.querySelector('.js-btn-nav');
+ var nav = document.querySelector('.js-header-nav');
  var body = document.querySelector('body');
- console.log(btn);
 
  btn.onclick = function() {
   nav.classList.toggle('active');
@@ -32,13 +31,34 @@ function toggleMobileMenu() {
 
 toggleMobileMenu();
 
-function togglePetInfo() {
-  var btnPets = document.querySelectorAll('.js-btn-pets')
+function togglePetsInfo() {
+  var btnPets = document.querySelectorAll('.js-btn-pets');
+  var btnClose = document.querySelectorAll('.js-popup-close');
+
+  btnClose.forEach(el => {
+    el.onclick = function(event) {
+      event.preventDefault();
+
+      var item = document.querySelectorAll('.js-popup');
+
+      item.forEach(i => {
+        i.classList.remove('active');
+      })    
+      
+    };
+  });
+
 
   btnPets.forEach(el => {
-    el.onclick = function() {
-      this.datasetid      
-    }
-  })
+    el.onclick = function(event) {
+      event.preventDefault();
+      
+      var id = this.dataset.id;
+
+      document.querySelector(`#pets-${id}`).classList.add('active');
+    };
+  });
 };
+
+togglePetsInfo();
 

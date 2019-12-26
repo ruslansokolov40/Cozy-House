@@ -21,7 +21,7 @@
                 <span class="header__logo-text">Shelter for pets in Boston</span>
               </a>
             </div>
-            <nav class="header__nav js-btn-nav">
+            <nav class="header__nav js-header-nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
                   <a href="#">About the shelter</a>
@@ -82,24 +82,23 @@
             </div>
           </div>
         </div>
-      </section>
-    
+      </section>    
       <section class="our-friends">
         <div class="container">
           <span class="caption">Our friends who are looking for a house</span>
           <div class="our-friends__outer">
             <div class="our-friends__wrap swiper-container js-our-friends">
-              <div class="our-friends__inner swiper-wrapper">
-                <div class="our-friends__item swiper-slide">
+              <div class="our-friends__inner swiper-wrapper">               
+                <div class="our-friends__item swiper-slide">              
                   <div class="our-friends__box">
                     <div class="our-friends__img">
                       <img src="./img/friendsfirst.jpg" alt="">
                     </div>
                     <span class="our-friends__name">Katrine</span>
                     <div class="our-friends__more">
-                      <a href="#" class="btn btn--border" data-id="katrin">Learn More</a>
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="katrine">Learn More</a>
                     </div>
-                  </div>              
+                  </div>               
                 </div>
                 <div class="our-friends__item swiper-slide">              
                   <div class="our-friends__box">
@@ -108,7 +107,7 @@
                     </div>
                     <span class="our-friends__name">Jennifer</span>
                     <div class="our-friends__more">
-                      <a href="#" class="btn btn--border" data-id="jenifer">Learn More</a>
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="jennifer">Learn More</a>
                     </div>
                   </div>               
                 </div>
@@ -119,9 +118,64 @@
                     </div>
                     <span class="our-friends__name">Woody</span>
                     <div class="our-friends__more">
-                      <a href="#" class="btn btn--border">Learn More</a>
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="woody">Learn More</a>
                     </div>
+                 </div>
                 </div>
+                <div class="our-friends__item swiper-slide">              
+                  <div class="our-friends__box">
+                    <div class="our-friends__img">
+                      <img src="./img/pets-4.png" alt="">
+                    </div>
+                    <span class="our-friends__name">Sophia</span>
+                    <div class="our-friends__more">
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="sophia">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-friends__item swiper-slide">              
+                  <div class="our-friends__box">
+                    <div class="our-friends__img">
+                      <img src="./img/pets-5.png" alt="">
+                    </div>
+                    <span class="our-friends__name">Timmy</span>
+                    <div class="our-friends__more">
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="timmy">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-friends__item swiper-slide">              
+                  <div class="our-friends__box">
+                    <div class="our-friends__img">
+                      <img src="./img/pets-6.png" alt="">
+                    </div>
+                    <span class="our-friends__name">Charly</span>
+                    <div class="our-friends__more">
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="charly">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-friends__item swiper-slide">              
+                  <div class="our-friends__box">
+                    <div class="our-friends__img">
+                      <img src="./img/pets-7.png" alt="">
+                    </div>
+                    <span class="our-friends__name">Scarlett</span>
+                    <div class="our-friends__more">
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="scarlett">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-friends__item swiper-slide">              
+                  <div class="our-friends__box">
+                    <div class="our-friends__img">
+                      <img src="./img/pets-8.png" alt="">
+                    </div>
+                    <span class="our-friends__name">Freddie</span>
+                    <div class="our-friends__more">
+                      <a href="#" class="btn btn--border js-btn-pets" data-id="freddie">Learn More</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -222,19 +276,69 @@
           </div>
         </div>
       </section>
-
     </main>
-
-    <div class="popup" id="pets-jenifer">
+    <div class="popup js-popup" id="pets-katrine">
       <div class="popup__outer">
         <div class="popup__box">
-            <div class="popup__close">
-            <div class="popup__wrap">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
+            <div class="popup__img">
+              <img src="./img/friendsfirst.jpg" alt="Katrine">
+            </div>
+            <div class="popup__info">
+              <span class="caption">Katrine</span>
+              <span class="popup__breed">Pooch + Labrador</span>
+              <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+              <ul class="popup__list">
+                <li class="popup__item">Age: <span>2 months</span></li>
+                <li class="popup__item">Inoculations: <span>none</span></li>
+                <li class="popup__item">Diseases: <span>none</span></li>
+                <li class="popup__item">Parasites: <span>none</span></li>
+              </ul>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" id="pets-jennifer">
+      <div class="popup__outer">
+        <div class="popup__box">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
             <div class="popup__img">
               <img src="./img/friendssecond.jpg" alt="jenifer">
             </div>
             <div class="popup__info">
               <span class="caption">Jennifer</span>
+              <span class="popup__breed">Pooch + Labrador</span>
+              <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+              <ul class="popup__list">
+                <li class="popup__item">Age: <span>2 months</span></li>
+                <li class="popup__item">Inoculations: <span>none</span></li>
+                <li class="popup__item">Diseases: <span>none</span></li>
+                <li class="popup__item">Parasites: <span>none</span></li>
+              </ul>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" id="pets-woody">
+      <div class="popup__outer">
+        <div class="popup__box">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
+            <div class="popup__img">
+              <img src="./img/friendsthird.jpg" alt="Woody">
+            </div>
+            <div class="popup__info">
+              <span class="caption">Woody</span>
               <span class="popup__breed">Pooch + Labrador</span>
               <div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</div>
               <ul class="popup__list">
@@ -244,21 +348,22 @@
                 <li class="popup__item">Parasites: <span>none</span></li>
               </ul>
             </div>
-          </div>
-          </div>
+          </div>          
         </div>
       </div>
     </div>
-    <div class="popup" id="pets-jenifer">
+    <div class="popup js-popup" id="pets-sophia">
       <div class="popup__outer">
         <div class="popup__box">
-            <div class="popup__close">
-            <div class="popup__wrap">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
             <div class="popup__img">
-              <img src="./img/friendssecond.jpg" alt="jenifer">
+              <img src="./img/pets-4.png" alt="Sophia">
             </div>
             <div class="popup__info">
-              <span class="caption">Jennifer</span>
+              <span class="caption">Sophia</span>
               <span class="popup__breed">Pooch + Labrador</span>
               <div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</div>
               <ul class="popup__list">
@@ -268,12 +373,110 @@
                 <li class="popup__item">Parasites: <span>none</span></li>
               </ul>
             </div>
-          </div>
-          </div>
+          </div>          
         </div>
       </div>
     </div>
-
+    <div class="popup js-popup" id="pets-timmy">
+      <div class="popup__outer">
+        <div class="popup__box">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
+            <div class="popup__img">
+              <img src="./img/pets-5.png" alt="Timmy">
+            </div>
+            <div class="popup__info">
+              <span class="caption">Timmy</span>
+              <span class="popup__breed">Pooch + Labrador</span>
+              <div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</div>
+              <ul class="popup__list">
+                <li class="popup__item">Age: <span>2 months</span></li>
+                <li class="popup__item">Inoculations: <span>none</span></li>
+                <li class="popup__item">Diseases: <span>none</span></li>
+                <li class="popup__item">Parasites: <span>none</span></li>
+              </ul>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" id="pets-charly">
+      <div class="popup__outer">
+        <div class="popup__box">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
+            <div class="popup__img">
+              <img src="./img/pets-6.png" alt="Charly">
+            </div>
+            <div class="popup__info">
+              <span class="caption">Charly</span>
+              <span class="popup__breed">Pooch</span>
+              <div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</div>
+              <ul class="popup__list">
+                <li class="popup__item">Age: <span>4 months</span></li>
+                <li class="popup__item">Inoculations: <span>none</span></li>
+                <li class="popup__item">Diseases: <span>none</span></li>
+                <li class="popup__item">Parasites: <span>none</span></li>
+              </ul>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" id="pets-scarlett">
+      <div class="popup__outer">
+        <div class="popup__box">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
+            <div class="popup__img">
+              <img src="./img/pets-7.png" alt="Scarlett">
+            </div>
+            <div class="popup__info">
+              <span class="caption">Scarlett</span>
+              <span class="popup__breed">Pooch + Labrador</span>
+              <div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</div>
+              <ul class="popup__list">
+                <li class="popup__item">Age: <span>2 months</span></li>
+                <li class="popup__item">Inoculations: <span>none</span></li>
+                <li class="popup__item">Diseases: <span>none</span></li>
+                <li class="popup__item">Parasites: <span>none</span></li>
+              </ul>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" id="pets-freddie">
+      <div class="popup__outer">
+        <div class="popup__box">
+          <div class="popup__close js-popup-close">
+            <img src="./img/Icon/cancel.svg" alt="">
+          </div>
+          <div class="popup__wrap">
+            <div class="popup__img">
+              <img src="./img/pets-8.png" alt="Freddie">
+            </div>
+            <div class="popup__info">
+              <span class="caption">Freddie</span>
+              <span class="popup__breed">Pooch + Labrador</span>
+              <div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</div>
+              <ul class="popup__list">
+                <li class="popup__item">Age: <span>2 months</span></li>
+                <li class="popup__item">Inoculations: <span>none</span></li>
+                <li class="popup__item">Diseases: <span>none</span></li>
+                <li class="popup__item">Parasites: <span>none</span></li>
+              </ul>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
     <footer class="footer" style="background-image: url(./img/bg-footer.jpg);">
       <div class="container">
         <div class="footer__wrap">
